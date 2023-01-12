@@ -1,0 +1,109 @@
+body{
+ 	overflow: hidden;
+ 	background-color: black;
+    background-image: linear-gradient( to right, #430074 5%, #380783, #430074 90% ); 
+
+}
+
+#centro{
+	height: 100px;
+	width: 740px;
+	margin-top: 350px;
+	margin-left: 70px;
+}
+
+#menu{
+
+	padding-top: 25px;
+	padding-left: 80%;
+
+}
+
+#titulo{
+
+    font-family: SuperMario256; 
+    color: whitesmoke; 
+    font-size: 650%;
+    letter-spacing: 5px;
+    text-shadow: 2px 3px 9px black;
+
+}
+
+#jolteon{
+	margin-left: 20%;
+	position: absolute;
+	margin-top: -25%;
+}
+
+img{
+	min-width: 30%;
+	max-width: 40%;
+}
+
+#btn1{
+
+	margin-left: -402.5px;
+	text-decoration: none;
+	color: #3B0265;
+	border: 4px solid #3B0265;
+	padding: 20px;
+	font-family: pixel;
+	font-size: 20px;
+	border-radius: 60px;
+	background-color: yellow;
+	position: absolute;
+	margin-top: -24px;
+}
+
+
+#btnC{
+
+	margin-left: 110px;
+	text-decoration: none;
+	color: #3B0265;
+	border: 4px solid #3B0265;
+	padding: 25px;
+	font-family: pixel;
+	font-size: 20px;
+	border-radius: 60px;
+	background-color: yellow;
+	animation: pisca 1s infinite;
+}
+
+#btn3{
+
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 30px;
+	font-family: pixel;
+
+}
+
+@keyframes pisca{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@font-face{
+
+  	font-family: Starborn;
+    src: url(font/Starborn.otf);
+
+}
+
+
+@font-face{
+
+  	font-family: SuperMario256;
+    src: url(font/SuperMario256.ttf);
+
+}
+
+@font-face{
+  	font-family: pixel;
+    src: url(font/pixel.TTF);
+}

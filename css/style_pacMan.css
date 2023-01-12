@@ -1,0 +1,206 @@
+	@font-face {
+		font-family: pixel;
+		src: url(font/pixel.TTF);
+	}
+
+	@font-face {
+		font-family: bluecheries;
+		src: url(font/BLUECHERIES.ttf);
+	}
+
+	body{
+		margin: 0;	
+		background-color: black;
+		padding: 10px 20px;
+		color: white;
+		overflow: hidden;
+	}
+
+	li{
+		text-align: left;
+		font-family: bluecheries;
+		font-size: 18px;
+		letter-spacing: 2px;
+		color: #430074;
+	}
+
+	#pontos{
+		font-family: bluecheries;
+		font-size: 30px;
+		margin-top: -60px;
+		margin-left: 100px;
+		position: absolute;
+	}
+
+	canvas{
+		margin-left: 10px;
+		margin-top: 20px;
+		position: absolute;
+		width: 90%;
+		height: 90%;
+	}
+	#delay{	
+		animation: delay 3.3s;
+	}
+
+	hr.hr1{
+		border: 2px solid #183dd0;
+		animation: delay 3.3s , pe 3.3s infinite;
+		width: 35.1%;
+		margin-right: -142px;
+		margin-top: 270px;
+	}
+
+	hr.hr2{
+		border: 2px solid #183dd0;
+		animation: delay 3.3s, pe 3.3s infinite;
+		width: 40.4%;
+		margin-top: -11px;
+		margin-right: -209.5px;
+	}
+
+	.lado1{
+		border: 2px solid #183dd0;
+		width: 30%;
+		margin-left: 66.2%;
+		margin-top: -263px;
+
+	}
+
+	.lado2{
+		border: 2px solid #183dd0;
+		width: 30%;
+		margin-left: 66.2%;
+		margin-top: 496.55px;
+
+	}
+
+	@keyframes delay{
+		0%{
+			opacity: 0;
+		}
+
+		99%{
+			opacity: 0;
+		}
+
+		100%{
+			opacity: 1;
+		}
+	}
+
+	@keyframes pe{
+		0%{
+			transform: rotate(90deg);
+		}
+
+		100%{
+			transform: rotate(90deg);
+		}
+	}
+
+	#titulo{
+		color: whitesmoke;
+		position: relative;
+		font-family: pixel;
+		letter-spacing: 2px;
+		margin-top: 0;			
+		margin-left: 42%;
+		width: 300px;
+	}
+
+	@font-face{
+		font-family: "BD_Cartoon_Shout-webfont";
+		src: url('font/BD_Cartoon_Shout-webfont.ttf');
+	}
+
+	#poke{
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		animation: rodar 2s infinite;
+		cursor: pointer;
+		margin-top: -5px;
+		margin-left: 15px;
+	}
+
+
+	@keyframes rodar{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+
+	#menu{
+		margin-top: 40px;
+		border-bottom: 5px solid white;
+		padding-right: 2%;
+		padding-bottom: -20px;
+	}
+
+	#Bt{
+	    background-color: yellow;
+	    color: #430074;
+	    margin-left: 88%;
+		margin-top: -5px;
+		position: absolute;
+	    border: solid lightyellow;
+	    border-radius: 30px;
+	    padding: 10px;
+	    font-size: 12px;
+	    text-decoration: none;
+	    font-family: "BD_Cartoon_Shout-webfont";
+	}
+
+	#Bt:hover{
+	    padding: 16px;
+	}
+
+	
+
+.notificacao{
+    margin-left: -12.5%;
+    margin-top: -470px;
+	position: absolute;
+    display: inline-block;
+    max-width: 330px;
+    padding: 25px 20px;
+    border-radius: 5px;
+    background-color: yellow;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: most 3s linear forwards;
+    text-align: center;
+    line-height: 30px;
+
+  }
+  .not{
+    	font-family: pixel;
+		font-size: 22px;
+		letter-spacing: 2px;
+		color: #430074;
+  }
+
+  @keyframes most {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+  }

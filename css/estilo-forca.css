@@ -1,0 +1,293 @@
+body{
+	overflow: hidden;
+}
+
+@font-face{
+  	font-family: Alice-Regular;
+    src: url(font/Alice-Regular.ttf);
+}
+
+@font-face{
+  	font-family: pixel;
+    src: url(font/pixel.TTF);
+}
+
+@font-face{
+	font-family: "BD_Cartoon_Shout-webfont";
+	src: url('font/BD_Cartoon_Shout-webfont.ttf');
+}
+
+#menu{
+	border-bottom: 5px solid white;
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 1%;
+	margin-bottom: 1%;
+}
+
+#poke{
+    height: 60px;
+    position: absolute;
+    animation: rodar 2s infinite;
+	cursor: pointer;
+}
+
+
+#Bt{
+    background-color: yellow;
+    color: #430074;
+    margin-left: 92%; 
+    border: solid lightyellow;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+  	font-family: BD_Cartoon_Shout-webfont;
+}
+
+#Bt:hover{
+    padding: 16px;
+}
+
+
+@keyframes rodar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	/*width: 100vw; height: 90vw;  /* ViewPort - tamanhos*/
+    margin-top: 10px;
+    background-color: black; 
+    background-image: linear-gradient( to right, #430074 5%, #380783, #430074 90% ); 
+}
+
+h1{
+	text-align: center;
+	margin-top: 0.5%;
+	margin-bottom: 1%;
+}
+
+#titulo{
+
+	color: whitesmoke;
+	position: relative;
+	font-family: pixel;
+	letter-spacing: 2px;
+	margin-top: -20px;
+	width: 20px;
+	margin-left: 42%;
+}
+
+#texto{
+
+	width: 250px;
+	border: 4px dotted lightyellow;
+	border-radius: 90px;
+	text-align: center;
+	color: whitesmoke;
+	margin-left: 150px;
+	font-size: 22px;
+	margin-top: 100px;
+	position: absolute;
+	padding: 10px;
+	font-family: Alice-Regular;
+
+
+}
+.container{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap ; /* 1 Elemento por linha*/
+	flex-direction: column; /* Elementos em coluna*/
+}
+
+#imagem{
+
+	background-image: url(../img/forcaOFC.png);
+	width: 234px;
+	height: 272px;
+	background-repeat: no-repeat;
+	margin-bottom: -40px;
+}
+
+#palavra-secreta{
+
+	font-family: Alice-Regular;
+	display: flex;
+	flex-direction: row;
+	justify-content: center; /* Centralizar */
+	align-items: center;
+	font-size: 1em;
+	margin-top: 30px; /* Distancia entre a imagem e as letras*/
+
+}
+
+/* tamanhos pequenos pra mobile*/
+
+.letras{
+
+	width: 16px;
+	text-align: center;
+	border-bottom: 2px solid whitesmoke;
+	color: mediumpurple;
+	padding: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	font-family: Alice-Regular;
+}
+
+.letrasEspaco{
+
+	border-bottom: none;
+	width: 20px;
+
+}
+#teclado{
+
+	margin-top: 10px;
+	font-family: Alice-Regular;
+
+}
+
+.teclas button{
+
+	width: 24px;
+	height: 24px;
+	margin: 2px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	box-shadow: 0px 2px 5px yellow;
+	border-radius: 5px;
+	border: 1px solid lightyellow;
+	color: mediumpurple;
+	font-weight: 900;
+	font-family: Alice-Regular;
+
+}
+
+.teclas button:disabled{
+
+	cursor: not-allowed;
+
+}
+
+.teclas button:hover{
+
+	transform: scale(1.3); 
+
+}
+
+#categoria{
+
+	margin-top: 12px;
+	color: mediumpurple;
+	font-size: 1.3em;
+	font-family: Alice-Regular;
+
+}
+
+#btnReiniciar{
+
+	background-color: lightyellow;
+}
+
+@media (min-width: 321px){
+
+	.teclas button{
+
+	width: 25px;
+	height: 25px;}
+
+	#categoria{
+
+	font-size: 1.5em;}
+	}
+
+/*@media (min-width: 376px){
+
+	.teclas button{
+
+	width: 30px;
+	height: 30px;}
+
+	#palavra-secreta{
+
+		font-size: 1.3em;
+	}
+
+	.letras{
+		width: 18px;
+	}
+
+	#categoria{
+
+	font-size: 1.5em;}
+	}
+
+@media (min-width: 426px){
+
+	.teclas button{
+
+	width: 36px;
+	height: 36px;}
+
+	#palavra-secreta{
+
+		font-size: 1.5em;
+	}
+
+	.letras{
+		width: 20px;
+	}
+
+	#categoria{
+
+	font-size: 1.6em;}
+	
+	}
+
+/* Deixando responsivo para cada tipo de tela*/
+
+@media (min-width: 769px){
+
+	.teclas button{
+
+	width: 68px;
+	height: 68px;
+	font-size: 1.8em;
+
+	}
+
+
+	#palavra-secreta{
+
+		font-size: 1.8em;
+	}
+
+	.letras{
+		width: 35px;
+	}
+
+	#categoria{
+
+	font-size: 2em;
+	}
+
+
+}

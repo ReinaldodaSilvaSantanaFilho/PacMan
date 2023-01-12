@@ -1,0 +1,143 @@
+body {
+ 	background-color: black;
+    background-image: linear-gradient( to right, #430074 5%, #380783, #430074 90% );
+    font-family: BD_Cartoon_Shout-webfont;
+	color: white;
+}
+
+#menu{
+	border-bottom: 5px solid white;
+	padding-top: 2%;
+	padding-right: 2%;
+}
+
+#poke{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation: rodar 2s infinite;
+	cursor: pointer;
+}
+
+#Bt{
+    background-color: yellow;
+    color: #430074;
+    margin-left: 92%; 
+    border: solid lightyellow;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#Bt:hover{
+    padding: 16px;
+}
+
+
+@keyframes rodar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#mostrador{
+
+	margin: auto;
+	margin-top: 2.5%;
+	margin-bottom: 30px;
+	width: 252px;
+}
+
+/* AREA CRIADA PARA DAR UM ESTILO NO TITULO (H1) */
+h1{
+	text-align: center;
+	margin-top: 2%;
+	text-shadow: -4px -4px 10px black;
+}
+
+p{
+	font-size: 3vh;
+	float:left;
+	margin-right: 5%;
+	text-shadow: -4px -4px 10px black;
+}
+
+img{
+	border: 0px;
+	width: 80%;
+}
+
+#jogador{
+	height: 30%;
+	width: 30%;
+}
+
+.tab{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	padding-top: 20px; 
+
+	/* ESTA PARTE EDITEI PARA AUXILIAR NO ALINHAMENTO */
+	padding: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* REMOVE BORDAS */
+
+#a1, #a2, #a3{
+	border-top: none;
+}
+#a1, #b1, #c1{
+	border-left: none;
+}
+#c1, #c2, #c3{
+	border-bottom: none;
+}
+#a3, #b3, #c3{
+	border-right: none;
+}
+
+.tabuleiro{
+	width: 335px;
+	height: 335px;
+	margin: auto;
+	border: 10px solid white;
+
+	/* ESTA PARTE EDITEI PARA AUXILIAR NO ALINHAMENTO */
+	/* Acho que seria bom passar para a sala também */
+	padding: 3%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+}
+
+/* CHAMEI UMA NOVA FONTE */
+@font-face{
+	font-family: "BD_Cartoon_Shout-webfont";
+	src: url('font/BD_Cartoon_Shout-webfont.ttf');
+}
+
+@font-face{
+  	font-family: pixel;
+    src: url(font/pixel.TTF);
+}
+
+
+#reset{
+	border-radius: 15px;
+	position: absolute;
+	margin-left: 75%;
+	width: 5%;
+	cursor: pointer;
+	margin-top: -45px;
+}

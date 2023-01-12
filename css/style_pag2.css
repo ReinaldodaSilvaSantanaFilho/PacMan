@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    background-image: linear-gradient(to right, #430074 5%, #380783, #430074 90%);
+    font-family: pixel;
+}   
+
+
+#menu{
+    border-bottom: 5px solid white;
+    padding-top: 2%;
+    padding-right: 2%;
+    margin-bottom: 1.5%;
+}
+
+@font-face{
+
+    font-family: pixel;
+    src: url(font/pixel.TTF);
+
+}
+
+
+#poke{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: -15px;
+    animation: rodar 2s infinite;
+}
+#poke:hover{
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    margin-left: 45%;
+    margin-top: 5px;
+}
+
+#Bt{
+    background-color: yellow;
+    color: #430074;
+    margin-left: 92%; 
+    border: solid lightyellow;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#Bt:hover{
+    padding: 16px;
+}
+
+
+@keyframes rodar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#link_jogos{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+    
+}
+
+.jogos{
+    height: 460px;
+    width: 260px;
+    margin-top: -50%;
+    border: outset white;
+    box-shadow: 0px 2px 10px yellow;
+    padding: 3%;
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.jogos:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.notificacao{
+    margin-left: 38%;
+    position: relative;
+    display: inline-block;
+    max-width: 330px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: yellow;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: most 3s linear forwards;
+    text-align: center;
+    line-height: 30px;
+
+  }
+  .not{
+    background-image: linear-gradient(to right, #430074, #430074);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 18px;
+  }
+
+  @keyframes most {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+  }

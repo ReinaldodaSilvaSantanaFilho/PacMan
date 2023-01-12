@@ -1,0 +1,127 @@
+	body{
+		background-color: #190039;
+		background-image: linear-gradient( to right, #430074 5%, #380783, #430074 90% );
+		font-family: Alice-Regular;
+		color: #FFF;
+		padding: 3%;
+		font-size: 18px;
+	}
+
+	#Bt1{
+	    background-color: yellow;
+	    color: #430074;
+	    margin-left: 87%;
+	    border: solid lightyellow;
+	    border-radius: 30px;
+	    padding: 10px;
+	    font-size: 12px;
+	    text-decoration: none;
+	    font-family: BD_Cartoon_Shout-webfont;
+	}
+
+	#Bt2{
+	    background-color: yellow;
+	    color: #430074;
+	    margin-left: 92%; 
+	    border: solid lightyellow;
+	    border-radius: 30px;
+	    padding: 10px;
+	    font-size: 12px;
+	    text-decoration: none;
+	    font-family: BD_Cartoon_Shout-webfont;
+	}
+
+	#Bt1:hover, #Bt2:hover{
+	    padding: 16px;
+	}
+
+	#poke{
+		margin-top: -15px;
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		animation: rodar 2s infinite;
+		cursor: pointer;
+	}
+
+
+	@keyframes rodar{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+	
+
+
+	.pergunta{
+		margin-top: 1%;
+		margin-bottom: 1%;
+		border-color: #b83dba;
+		letter-spacing: 2px;
+	}
+
+	#id_header{
+		background-color: #b83dba;
+		padding: 0.1%;
+		border-radius: 25px;
+		width: 50%;
+		margin-top: 2%;
+		margin-bottom: 1.5%;
+		font-family: SuperMario256;
+		letter-spacing: 2px;
+		Line-height: 30px;
+	}
+
+
+	.title{
+		background-color: #fdf400;
+		color: #190039;
+		padding: 1.05%;
+		border-radius: 25px;
+		width: 50%;
+		margin-top: 2%;
+		margin-bottom: 0.5%;
+	}
+
+	#btnEnviar{
+	    background-color: yellow;
+	    color: #430074;
+	    border: solid lightyellow;
+	    border-radius: 25px;
+	    padding: 10px;
+	    font-size: 12px;
+	    text-decoration: none;
+	    font-family: BD_Cartoon_Shout-webfont;
+		cursor: pointer;
+	}
+
+	#btnEnviar:hover{
+		box-shadow: 0 4px 20px #666; 	
+		transition: 0.4s;
+	}
+
+	.alternativa{
+		margin-bottom: 0.7%;
+	}
+
+	@font-face{
+	  	font-family: pixel;
+	    src: url(font/pixel.TTF);
+	}
+
+	@font-face{
+	  	font-family: SuperMario256;
+	    src: url(font/SuperMario256.ttf);
+	}
+
+	@font-face{
+		font-family: "BD_Cartoon_Shout-webfont";
+		src: url('font/BD_Cartoon_Shout-webfont.ttf');
+	}
+	@font-face{
+		font-family: Alice-Regular;
+		src: url(font/Alice-Regular.ttf);
+	}

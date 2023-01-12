@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="javascript:setTimeout(()=>{window. location = 'URL' },500);">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="shortcut icon" href="img/pikachu_icon.png">
+		<link rel="stylesheet" type="text/css" href="css/style_pacMan.css">
+		<title>Pac-Man</title>
+	</head>
+	<body>
+		<div id="menu">
+			<img id="poke" src="./img/pokebola.png" onclick= "window.location.href = 'pag2.html'">
+			<a href="pag2.html" id="Bt">Voltar</a>
+			<strong>
+				<h1 id="titulo">Pac-Man</h1>
+			</strong>
+		</div>
+
+		<p id="pontos">
+			<span>Pontuação: </span> <span id="scoreEl">0</span>
+		</p>
+
+		<canvas></canvas>
+		
+		<!-- AREA DO CODIGO USADA PARA RESOLVER BUG NAS BORDAS DA DIREITA 
+			RETIRAR DOS COMENTARIOS CASO ERRO APAREÇA
+		<hr class="hr1">
+		<hr class="hr2">
+		<hr class="lado1" id="delay">
+		<hr class="lado2" id="delay">
+		-->
+
+		<center>
+			<div class="notificacao">
+				<p class="not">Como jogar:
+					<table>
+						<ul>
+							<li>W - Mover para cima</li>
+							<li>A - Mover para esquerda</li>
+							<li>S - Mover para baixo</li>
+							<li>D - Mover para direita</li>
+							<li>Pressione F5 para reiniciar</li>
+						</ul>
+					</table>
+				</p>
+				<span class="progress"></span>
+			</div>
+		</center>	
+		<script src="script/pacMan.js"></script>
+	</body>
+</html>
